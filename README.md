@@ -4,6 +4,9 @@
 
 这个项目实现了Mandelbrot集合的可视化和性能基准测试。项目包含三种计算模式:单线程、OpenMP并行和OpenCL,并支持单精度和双精度计算。用户可以选不同的模式和精度来生成Mandelbrot集合,并进行性能测试。
 
+## 参考
+[link] https://github.com/Dylan8527/Mandelbrot-set-GPU
+
 ## 文件结构
 
 - `main.cpp`:主程序文件,负责初始化OpenGL窗口,处理用户输入,并调用相应的计算函数生成Mandelbrot集合。
