@@ -1,0 +1,23 @@
+{
+    "cmake.configureSettings": {
+      "CMAKE_TOOLCHAIN_FILE": "C:/vcpkg/scripts/buildsystems/vcpkg.cmake",
+      "VCPKG_TARGET_TRIPLET": "x64-windows"
+    },
+    "files.associations": {
+      "exception": "cpp",
+      "iostream": "cpp",
+      "vector": "cpp",
+      "charconv": "cpp",
+      "complex": "cpp",
+      "locale": "cpp",
+      "format": "cpp",
+      "sstream": "cpp",
+      "xhash": "cpp",
+      "xlocnum": "cpp",
+      "xmemory": "cpp",
+      "functional": "cpp",
+      "__availability": "cpp",
+      "__hash_table": "cpp"
+    }
+}
+  

@@ -1,0 +1,2 @@
+Precision: Double
+Precision: Float

@@ -1,0 +1,18 @@
+Precision: Double
+Single-threaded initialization duration: 0.0004904 seconds
+OpenMP initialization duration: 0.0004732 seconds
+OpenCL initialization duration: 0.127929 seconds
+Single-threaded computation duration: 54.3991 seconds
+OpenMP computation duration: 10.7942 seconds
+OpenCL computation duration: 2.41553 seconds
+OpenMP Speedup: 5.03944x
+OpenCL Speedup: 21.3878x
+Precision: Float
+Single-threaded initialization duration: 0.0004855 seconds
+OpenMP initialization duration: 0.0004859 seconds
+OpenCL initialization duration: 0.12642 seconds
+Single-threaded computation duration: 54.0452 seconds
+OpenMP computation duration: 10.8369 seconds
+OpenCL computation duration: 0.327338 seconds
+OpenMP Speedup: 4.98693x
+OpenCL Speedup: 119.106x
