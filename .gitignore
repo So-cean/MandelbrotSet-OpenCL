@@ -103,4 +103,4 @@ dmypy.json
 # build
 build/
 Mandelbrot-set-GPU/
-frame/
+frames/
