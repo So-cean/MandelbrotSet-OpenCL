@@ -4,6 +4,13 @@
 
 这个项目实现了Mandelbrot集合的可视化和性能基准测试。项目包含三种计算模式:单线程、OpenMP并行和OpenCL,并支持单精度和双精度计算。用户可以选不同的模式和精度来生成Mandelbrot集合,并进行性能测试。
 
+## GIF
+<div style="display: flex; justify-content: space-around;">
+  <img src="1.gif" alt="GIF 1" style="width: 33%;">
+  <img src="2.gif" alt="GIF 2" style="width: 33%;">
+  <img src="3.gif" alt="GIF 3" style="width: 33%;">
+</div>
+
 ## 参考
 [link] https://github.com/Dylan8527/Mandelbrot-set-GPU
 
@@ -13,6 +20,7 @@
 - `benchmark.cpp`:性能基准测试文件,包含不同计算模式的基准测试函数,并输出性能结果。
 - `main_openmp.cpp`:OpenMP并行计算实现文件。
 - `main_opencl.cpp`:OpenCL计算实现文件。
+- `render.cpp`:渲染Mandelbrot集合并保存为GIF文件。
 - `lodepng.h`:PNG图片编码库头文件。
 
 ## 依赖项
@@ -23,6 +31,7 @@
 - OpenCL
 - OpenMP
 - lodepng
+- ffmpeg
 
 ## 编译和运行
 
@@ -40,7 +49,7 @@ cmake --build . --config Release
 cd ..
 ```
 
-可视化Mandelbrot集合
+### 可视化Mandelbrot集合
 运行以下命令启动可视化程序:
 
 ```sh
@@ -52,7 +61,13 @@ cd ..
 运行以下命令启动性能基准测试:
 
 ```sh
-./build/Release/benchmark
+./build/Release/benchmark [num_iterations]
+```
+
+### 渲染Mandelbrot集合并保存为GIF
+运行以下命令启动渲染程序:
+```sh
+./build/Release/render [num_frames] [frame_rate]
 ```
 
 ### 参数选项
@@ -69,3 +84,7 @@ cd ..
 
 1. 单精度 (float)
 2. 双精度 (double, 默认)
+
+#### 渲染帧数:
+
+用户可以设定渲染的帧数以生成不同长度的GIF文件。

@@ -63,6 +63,19 @@ target_link_libraries(benchmark PRIVATE glfw)
 target_link_libraries(benchmark PRIVATE lodepng)
 
 
+# 添加 render.cpp 可执行文件
+add_executable(render render.cpp)
+target_link_libraries(render PRIVATE fmt::fmt)
+target_link_libraries(render PRIVATE OpenMP::OpenMP_CXX)
+target_link_libraries(render PRIVATE OpenCL::OpenCL)
+target_link_libraries(render PRIVATE OpenCL::HeadersCpp)
+target_link_libraries(render PRIVATE OpenGL::GL)
+target_link_libraries(render PRIVATE GLUT::GLUT)
+target_link_libraries(render PRIVATE GLEW::GLEW)
+target_link_libraries(render PRIVATE glfw)
+target_link_libraries(render PRIVATE lodepng)
+
+
 # 添加 main.cu 可执行文件
 # add_executable(main_cu main.cu)
 # target_link_libraries(main_cu PRIVATE fmt::fmt)
