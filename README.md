@@ -6,9 +6,9 @@
 
 ## GIF
 <div style="display: flex; justify-content: space-around;">
-  <img src="1.gif" alt="GIF 1" style="width: 33%;">
-  <img src="2.gif" alt="GIF 2" style="width: 33%;">
-  <img src="3.gif" alt="GIF 3" style="width: 33%;">
+  <img src="1.gif" alt="GIF 1" style="width: 30%;">
+  <img src="2.gif" alt="GIF 2" style="width: 30%;">
+  <img src="3.gif" alt="GIF 3" style="width: 30%;">
 </div>
 
 ## 参考
